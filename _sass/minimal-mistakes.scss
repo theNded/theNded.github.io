@@ -38,3 +38,9 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+.fa-scholar {
+    content: url('/assets/images/scholar.svg');
+    height: 1em;
+    width: auto;
+  }

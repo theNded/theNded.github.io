@@ -1,9 +1,3 @@
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
@@ -12,21 +6,37 @@
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
-    {% endif %}
+
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-      {% if post.author %}
-        <p>{{ post.author}}</p>
-      {% endif %}
+      {% endif %}   
     </h2>
+
+    {% if post.author %}
+    <p>{{ post.author}}</p>
+    {% endif %}       
+
+    {% if post.journal %}
+    <p>{{ post.journal}}</p>
+    {% endif %}
+
+    {% if post.imurl %}
+    <div class="archive__item-teaser">
+      <img src="{{ post.imurl }}" alt="">
+    </div>
+    {% endif %}
+
+    {% if post.paperurl %}
+    <a href="{{ post.paperurl }}">Paper</a>
+    {% endif %}
+
+    {% if post.codeurl %}
+    <a href="{{ post.codeurl }}">Code</a>
+    {% endif %}
+
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
