@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -33,6 +34,7 @@ layout: default
         </header>
       {% endunless %}
 
+
       <section class="page__content e-content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
@@ -42,6 +44,18 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+
+        {% if page.author %}
+        <p style="margin:0">{{ page.author}}</p>
+        {% endif %}       
+    
+        {% if page.journal %}
+        <p style="margin:0"><em>{{ page.journal}}</em><br><br></p>
+        {% endif %}
+    
+        {% if page.imurl %}
+        <img src="{{page.imurl}}" alt=""/>
+        {% endif %}        
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
@@ -50,7 +64,6 @@ layout: default
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
         {% include page__date.html %}
       </footer>
 

@@ -464,6 +464,9 @@
 
 .pub-container {
   display: flex;
+}
+
+.archive__item {
   margin-bottom: 3em;
 }
 
@@ -480,11 +483,11 @@
 
 .pub-left {
   width: 30%;
+  padding-right: 2%;
 }
 
 .pub-right {
   width: 68%;
-  padding-left: 2%;
 }
 
 .pub-right a.button {

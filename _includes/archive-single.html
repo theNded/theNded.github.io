@@ -8,9 +8,9 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     <div class="pub-container">
 
-    {% if post.imurl %}
+    {% if post.teaserurl %}
       <div class="archive__item-teaser pub-left">
-        <img src="{{ post.imurl }}" alt="">
+        <img src="{{ post.teaserurl }}" alt="">
       </div>
       {% endif %}
 
@@ -39,6 +39,5 @@
     </div> 
     </div>
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
