@@ -255,7 +255,7 @@ body {
    ========================================================================== */
 
 .page__share {
-  margin-top: 2em;
+  margin-top: 1em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
@@ -340,8 +340,8 @@ body {
 }
 
 .taxonomy__section {
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
 
   &:not(:last-child) {
     border-bottom: solid 1px $border-color;
@@ -357,7 +357,7 @@ body {
   }
 
   + .taxonomy__section {
-    margin-top: 2em;
+    margin-top: 0.5em;
   }
 }
 
