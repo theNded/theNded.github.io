@@ -6,37 +6,38 @@
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="pub-container">
 
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    {% if post.imurl %}
+      <div class="archive__item-teaser pub-left">
+        <img src="{{ post.imurl }}" alt="">
+      </div>
+      {% endif %}
+
+    <div class="pub-right">
+    <h3 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post.url | relative_url }}" rel="permalink", style="text-decoration:none">{{ title }}</a>
       {% endif %}   
-    </h2>
-
+    </h3>
     {% if post.author %}
     <p>{{ post.author}}</p>
     {% endif %}       
 
     {% if post.journal %}
-    <p>{{ post.journal}}</p>
-    {% endif %}
-
-    {% if post.imurl %}
-    <div class="archive__item-teaser">
-      <img src="{{ post.imurl }}" alt="">
-    </div>
+    <p><em>{{ post.journal}}</em><br><br></p>
     {% endif %}
 
     {% if post.paperurl %}
-    <a href="{{ post.paperurl }}">Paper</a>
+    <a href="{{ post.paperurl }}" class="button">Paper</a>
     {% endif %}
-
     {% if post.codeurl %}
-    <a href="{{ post.codeurl }}">Code</a>
+    <a href="{{ post.codeurl }}" class="button">Code</a>
     {% endif %}
-
+    </div> 
+    </div>
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>

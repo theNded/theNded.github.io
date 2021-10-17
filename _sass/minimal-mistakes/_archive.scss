@@ -8,13 +8,13 @@
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    width: calc(100% - #{$left-sidebar-width-narrow});
+    padding-right: 0    
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    width: calc(100% - #{$left-sidebar-width});
+    padding-right: 0
   }
 }
 
@@ -460,4 +460,54 @@
 	.feature__wrapper {
 		display: inline-block;
 	}
+}
+
+.pub-container {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.pub-container h3 {
+  margin: 0; 
+  font-size: 1em;
+  margin-bottom: .5em;  
+}
+
+.pub-container p {
+  margin: 0; 
+  font-size: .9em
+}
+
+.pub-left {
+  width: 30%;
+}
+
+.pub-right {
+  width: 68%;
+  padding-left: 2%;
+}
+
+.pub-right a.button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.5em;
+  box-sizing: border-box;
+  text-decoration:none;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.2s;
+  font-size: .8em;
+}
+
+.pub-right a.button:hover{
+  background-color:#4095c6;
+}
+
+@media all and (max-width:30em){
+  .pub-right a.button {
+    display:block;
+    margin:0.2em auto;
+  }
 }
