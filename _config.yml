@@ -21,8 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Wei Dong"
 description              : "Wei's Homepage"
-url                      : "dongweipku.github.io"
-baseurl                  : "/" # the subpath of your site, e.g. "/blog"
+url                      : #
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "/assets/images/about_me.jpg"
 logo                     : "/assets/images/avatar.jpg"
