@@ -1,9 +1,9 @@
 ---
 title   : "Upon Matrix and Graph Representations of Factor Graphs"
 categories: Blog
+desc: "It is a brief note for a group discussion about graph and matrix representations. Contents are not necesserily correct."
 ---
 
-Here is the brief note in a group discussion about graph and matrix representations. Contents are not necesserily correct.
 
 ## Motivation
 - Understand better the connections between **matrices** and **graphs** in previous works; Recap details.

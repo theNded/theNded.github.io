@@ -28,13 +28,17 @@
 
     {% if post.journal %}
     <p><em>{{ post.journal}}</em><br><br></p>
-    {% endif %}
+    {% endif %}        
 
     {% if post.paperurl %}
     <a href="{{ post.paperurl }}" class="button">Paper</a>
     {% endif %}
     {% if post.codeurl %}
     <a href="{{ post.codeurl }}" class="button">Code</a>
+    {% endif %}
+
+    {% if post.desc %}
+    <p>{{post.desc}}</p>
     {% endif %}
     </div> 
     </div>
