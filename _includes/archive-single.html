@@ -36,6 +36,10 @@
     {% if post.codeurl %}
     <a href="{{ post.codeurl }}" class="button">Code</a>
     {% endif %}
+    {% if post.tutorial %}
+    <a href="{{ post.tutorial }}" class="button">Tutorial</a>
+    {% endif %}
+
 
     {% if post.desc %}
     <p>{{post.desc}}</p>
