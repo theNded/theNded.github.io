@@ -20,15 +20,15 @@
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink", style="text-decoration:none">{{ title }}</a>
-      {% endif %}   
+      {% endif %}
     </h3>
     {% if post.author %}
     <p>{{ post.author}}</p>
-    {% endif %}       
+    {% endif %}
 
     {% if post.journal %}
     <p><em>{{ post.journal}}</em><br><br></p>
-    {% endif %}        
+    {% endif %}
 
     {% if post.paperurl %}
     <a href="{{ post.paperurl }}" class="button">Paper</a>
@@ -36,15 +36,25 @@
     {% if post.codeurl %}
     <a href="{{ post.codeurl }}" class="button">Code</a>
     {% endif %}
+    {% if post.code_tbd %}
+    <a class="button">Code (Coming Soon)</a>
+    {% endif %}
+
+    {% if post.codeurl_preprocess %}
+    <a href="{{ post.codeurl_preprocess }}" class="button">Preprocessing</a>
+    {% endif %}
+    {% if post.codeurl_postprocess %}
     {% if post.tutorial %}
     <a href="{{ post.tutorial }}" class="button">Tutorial</a>
     {% endif %}
 
 
+
+
     {% if post.desc %}
     <p>{{post.desc}}</p>
     {% endif %}
-    </div> 
+    </div>
     </div>
     {% include page__meta.html type=include.type %}
   </article>
