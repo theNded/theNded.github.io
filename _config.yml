@@ -103,13 +103,13 @@ analytics:
 author:
   name             : "Wei Dong"
   avatar           : "/assets/images/me.jpg"
-  bio              : "PhD student in robotics at CMU"
-  location         : "Pittsburgh, PA"
-  email            : 
+  bio              : "Postdoc Researcher at Apple"
+  location         : "Sunnyvale, CA"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:weidongATandrewDOTcmuDOTedu"
+      url: "mailto:thendedATgmailDOTcom"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://dongwei.info"
@@ -151,7 +151,7 @@ footer:
       # url:
     - label: "Scholar"
       icon: "fab fa-fw fa-scholar"
-      url: "https://scholar.google.com/citations?user=bIex4IQAAAAJ"        
+      url: "https://scholar.google.com/citations?user=bIex4IQAAAAJ"
 
 
 # Reading Files
