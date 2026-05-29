@@ -6,7 +6,7 @@ author_profile: true
 ![mylife](/assets/images/mylife.jpg)
 
 ## About me
-Nice to meet you, my name is Wei Dong (董未). You can call me Wei, with the same pronunciation as Way. I'm from [Huzhou (湖州)](https://www.google.com/maps/place/Huzhou,+Zhejiang,+China/@30.868142,120.0639318,31949m/data=!3m1!1e3!4m5!3m4!1s0x344b4b68f92db705:0x34467013b412f4f0!8m2!3d30.89441!4d120.086809), a small city near Shanghai.
+Nice to meet you, my name is Wei Dong (董未). I'm from [Huzhou (湖州)](https://www.google.com/maps/place/Huzhou,+Zhejiang,+China/@30.868142,120.0639318,31949m/data=!3m1!1e3!4m5!3m4!1s0x344b4b68f92db705:0x34467013b412f4f0!8m2!3d30.89441!4d120.086809), a small city near Shanghai.
 
 I'm a researcher at Apple with [Stephan Richter](http://www.stephanrichter.org/) and [Vladlen Koltun](https://vladlen.info). I spent 9 months in the same team as a Postdoc before becoming a full-time employee. In the summer of 2023, I received my PhD in Robotics at Robotics Institute, CMU, advised by [Michael Kaess](https://www.cs.cmu.edu/~kaess/). Before that, I obtained my Master's and Bachelor's degrees from Peking University, China, advised by [Hongbin Zha](https://www.cis.pku.edu.cn/info/1177/1379.htm).  My CV can be found [here](/assets/pdf/cv.pdf).
 
