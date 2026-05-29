@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.28.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -123,7 +123,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/theNded"
     - label: "Google Scholar"
-      icon: "fab fa-fw fa-scholar"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=bIex4IQAAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -150,7 +150,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
     - label: "Scholar"
-      icon: "fab fa-fw fa-scholar"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=bIex4IQAAAAJ"
 
 
