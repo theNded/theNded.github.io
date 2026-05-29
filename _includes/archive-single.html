@@ -30,6 +30,9 @@
     <p><em>{{ post.journal}}</em><br><br></p>
     {% endif %}
 
+    {% if post.projecturl %}
+    <a href="{{ post.projecturl }}" class="button">Project</a>
+    {% endif %}
     {% if post.paperurl %}
     <a href="{{ post.paperurl }}" class="button">Paper</a>
     {% endif %}
