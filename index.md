@@ -5,6 +5,7 @@ author_profile: true
 
 ![mylife](/assets/images/mylife.jpg)
 ## News
+- 2026: We released [*FastFrames*](https://apple-aiml-research.github.io/ml-fastframes/).
 - 2026: [*SHARP*](https://apple.github.io/ml-sharp/) was accepted to ICLR 2026.
 - 2025: [*Spatial Scenes*](https://support.apple.com/guide/apple-vision-pro/create-a-spatial-photo-view-scene-tan1be9a3a0b/visionos/) was featured on WWDC and shipped to iOS/iPadOS/visionOS 26.
 - 2023: I received my PhD in Robotics from RI, CMU and joined Apple.
